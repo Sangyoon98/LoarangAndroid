@@ -41,6 +41,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
@@ -53,6 +54,11 @@ android {
 }
 
 dependencies {
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3.logging.interceptor)
 
     // Navigation
     implementation(libs.androidx.navigation.fragment)
