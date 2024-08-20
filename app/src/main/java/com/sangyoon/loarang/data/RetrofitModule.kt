@@ -16,7 +16,7 @@ import javax.inject.Singleton
 object RetrofitModule {
     @Provides
     @Singleton
-    fun apiService(): LostArkApiService {
+    fun create(): LostArkApiService {
         return Retrofit.Builder()
             .baseUrl("https://developer-lostark.game.onstove.com/")
             .addConverterFactory(GsonConverterFactory.create())
