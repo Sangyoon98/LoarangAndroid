@@ -20,5 +20,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Loarang"
-include(":app")
- 
+include(":presentation")
+include(":domain")
+include(":data")
